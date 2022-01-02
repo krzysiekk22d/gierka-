@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    width: 700px;
+    height: 400px;
+    border: 1px solid black;
+    margin: auto;
+}
+#character{
+    width: 100px;
+    height: 252px;
+    background-image:url(https://scontent.fktw1-1.fna.fbcdn.net/v/t1.15752-9/270080737_453362339618305_8875183404583369332_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_ohc=CYnFYRqRrA0AX-hYU55&_nc_ht=scontent.fktw1-1.fna&oh=03_AVImvGKAoF2rH9F80h75JP_3Zvc3QsnD6GyL_JSN5Qt9bA&oe=61F7F173);
+    position:relative;
+    top: 150px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 70px;}
+    70%{top: 70px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-image:url(https://scontent.fktw4-1.fna.fbcdn.net/v/t1.15752-9/cp0/270037122_1590241464673930_6253073895989298728_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_ohc=E60aNKYRDwMAX9ncs4O&_nc_ht=scontent.fktw4-1.fna&oh=03_AVIdIcgKUCngrsAaAl4VFv-Gz-P-qOhabEJGC_r0Ar9ArA&oe=61F60B30&dl=1);
+    width: 40px;
+    height: 24px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 700px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
